@@ -1,0 +1,43 @@
+.FriendList {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+}
+.FriendItem {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto 10px;
+    flex-direction: row;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.onlineStatus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.online {
+    composes: onlineStatus;
+    background: green;
+}
+.offline {
+    composes: onlineStatus;
+    background: red;
+}
+
+.avatar {
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.name {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
